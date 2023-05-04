@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Zoom</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper img {
+        transition: transform 0.4s;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .wrapper:hover img {
+        transform: scale(1.6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img
+        src="https://imageio.forbes.com/specials-images/imageserve/5e3dc5968b6cf300071e2dc2/0x0.jpg?format=jpg&width=1200"
+        alt=""
+      />
+    </div>
+    <h1>Ducati Panigale</h1>
+  </body>
+</html>
